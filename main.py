@@ -40,5 +40,6 @@
 # print(quote.upper())
 # print(quote.capitalize())
 # print(quote.replace('be', 'me'))
-year = input('what Year you were born?')
-print(f'You are {2023 - int(year)} years old')
+username = input('What\'s Your username?')
+password = input('What\'s Your password?')
+print(f'Hello {username}, your password - {"*" * len(password)} - is {len(password)} characters long')
