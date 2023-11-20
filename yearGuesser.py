@@ -1,0 +1,1 @@
+print(input('what Year you were born?'))

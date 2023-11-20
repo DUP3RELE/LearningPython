@@ -36,3 +36,7 @@ print(selfish[0:5])
 print(selfish[0:8:3])
 print(selfish[::-1])
 # 1.26
+quote = 'to be or not to be'
+print(quote.upper())
+print(quote.capitalize())
+print(quote.replace('be', 'me'))
