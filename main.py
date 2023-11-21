@@ -40,6 +40,5 @@
 # print(quote.upper())
 # print(quote.capitalize())
 # print(quote.replace('be', 'me'))
-username = input('What\'s Your username?')
-password = input('What\'s Your password?')
-print(f'Hello {username}, your password - {"*" * len(password)} - is {len(password)} characters long')
+li = [1,2,3,4,5]
+matrix = [[1,2,3],[2,4,6],[1,3,5]]
