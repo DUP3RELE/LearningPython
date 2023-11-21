@@ -50,3 +50,14 @@ li.pop(0)
 print(li)
 li.remove(4)
 print(li)
+
+basket = ['b', 'd', 'y', 'g', 'b', 'd', 'y', 'r', 'b', 'd', 'a', 'z']
+# # basket.sort()
+# print(basket)
+
+# # creates a new array! (sorted)
+# print(sorted(basket))
+
+basket.reverse()
+print(basket)
+print(reversed(basket))
