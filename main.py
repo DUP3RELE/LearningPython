@@ -11,7 +11,7 @@
 # # # variable
 # # print(iq)
 # # # constant
-# # PI = 3.14 
+# # PI = 3.14
 # # a,b,c = 1,2,3
 # # print(a)
 # # print(b)
@@ -70,3 +70,30 @@
 new_sentence = ' '.join(['hi', 'my', 'name', 'is', 'Krystian'])
 
 print(new_sentence)
+
+a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(a)
+print(b)
+print(c)
+print(other)
+print(d)
+
+dictionary = {'a': 1, 'b': 2, 'c': 3}
+
+print(dictionary['b'])
+
+# dictionary inside of a list, list is sorted, dict is not!
+
+list = [{
+    'a': 1,
+    'b': 2,
+    'c': 3
+}, {
+    'd': 4,
+    'e': 5,
+    'f': 6
+}, {
+    'g': 7,
+    'h': 8,
+    'i': 9
+}]
