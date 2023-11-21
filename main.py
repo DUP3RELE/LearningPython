@@ -42,3 +42,11 @@
 # print(quote.replace('be', 'me'))
 li = [1,2,3,4,5]
 matrix = [[1,2,3],[2,4,6],[1,3,5]]
+li.extend([100, 5])
+print(li)
+li.pop()
+print(li)
+li.pop(0)
+print(li)
+li.remove(4)
+print(li)
