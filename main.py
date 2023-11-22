@@ -84,19 +84,21 @@ print(dictionary['b'])
 
 # dictionary inside of a list, list is sorted, dict is not!
 
-list = [{
-    'a': 1,
-    'b': 2,
-    'c': 3
-}, {
-    'd': 4,
-    'e': 5,
-    'f': 6
-}, {
-    'g': 7,
-    'h': 8,
-    'i': 9
-}]
+# list = [{
+#     'a': 1,
+#     'b': 2,
+#     'c': 3
+# }, {
+#     'd': 4,
+#     'e': 5,
+#     'f': 6
+# }, {
+#     'g': 7,
+#     'h': 8,
+#     'i': 9
+# }]
+
+list = [1,2,3,4,5,6,7,7,7]
 
 user = {'basket': [1, 2, 3], 'greet': 'hello', 'age': 20}
 print(user.get('height',180))
@@ -104,5 +106,8 @@ print('basket' in user)
 list2 = list.copy()
 print(list.clear())
 print(list2)
-# tuple = () list = [], dict = {}
+# tuple = () list = [], dict = {key:value}, set = {}
 tuple = (1,2,3,4,5)
+my_set = {1,2,3,4,5,5,5}
+print(my_set)
+print(len(list))
