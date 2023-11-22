@@ -97,3 +97,12 @@ list = [{
     'h': 8,
     'i': 9
 }]
+
+user = {'basket': [1, 2, 3], 'greet': 'hello', 'age': 20}
+print(user.get('height',180))
+print('basket' in user)
+list2 = list.copy()
+print(list.clear())
+print(list2)
+# tuple = () list = [], dict = {}
+tuple = (1,2,3,4,5)
