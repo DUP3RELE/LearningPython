@@ -13,6 +13,12 @@
 #     print('you are not old enough to drive!')
 
 is_friend = False
+is_user = True
 can_message = "message allowed" if  is_friend else 'message not allowed'
 print(can_message)
 # 30:00
+# short circuting
+if is_friend or is_user:
+  print('best friends forever!')
+if is_friend and is_user:
+  print('best friends forever!')
