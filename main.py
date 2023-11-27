@@ -22,14 +22,8 @@
 #   print('best friends forever!')
 # if is_friend and is_user:
 #   print('best friends forever!')
-is_magician = False
-is_expert = True
+a = [1,2,3]
+b = [1,2,3]
 
-if is_magician and is_expert:
-  print('You are master magician!')
-
-elif is_magician or is_expert:
-  print('At least You\'re getting there')
-
-if not(is_magician):
-  print('You need to learn magic')
+print(a is b)
+print(a == b)
