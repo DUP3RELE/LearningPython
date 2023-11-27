@@ -52,6 +52,10 @@ for i,char in enumerate('helloooooo'):
 for item in range(0,10):
   print(item)
 
-for i,char in enumerate(range(100)):
+for i,char in enumerate(list(range(100))):
   if char == 50:
     print(i, char)
+
+i = 0
+while i < 50:
+  print(i)
