@@ -22,8 +22,15 @@
 #   print('best friends forever!')
 # if is_friend and is_user:
 #   print('best friends forever!')
-a = [1,2,3]
-b = [1,2,3]
+# a = [1,2,3]
+# b = [1,2,3]
 
-print(a is b)
-print(a == b)
+# print(a is b)
+# print(a == b)
+
+for item in 'Zero to mastery':
+  print(item + '%')
+
+for item in (1,2,3,4):
+  for x in ['a','b','c','d']:
+    print(item, x)
