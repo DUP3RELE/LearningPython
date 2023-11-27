@@ -47,10 +47,11 @@
 # for key, value in user.items():
 #   print(key, value)
 
-my_list = [1,2,3,4,5,6,7,8,9]
+for i,char in enumerate('helloooooo'):
+  print(i,char)
+for item in range(0,10):
+  print(item)
 
-counter = 0
-
-for item in my_list:
-  counter += item
-print(counter)
+for i,char in enumerate(range(100)):
+  if char == 50:
+    print(i, char)
