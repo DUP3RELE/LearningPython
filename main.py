@@ -28,9 +28,29 @@
 # print(a is b)
 # print(a == b)
 
-for item in 'Zero to mastery':
-  print(item + '%')
+# for item in 'Zero to mastery':
+#   print(item + '%')
 
-for item in (1,2,3,4):
-  for x in ['a','b','c','d']:
-    print(item, x)
+# for item in (1,2,3,4):
+#   for x in ['a','b','c','d']:
+#     print(item, x)
+
+# user = {
+#   'name': 'Golem',
+#   'age': 5006,
+#   'can_swim': False
+# }
+# for key in user:
+#   print(key)
+# for value in user:
+#   print(value)
+# for key, value in user.items():
+#   print(key, value)
+
+my_list = [1,2,3,4,5,6,7,8,9]
+
+counter = 0
+
+for item in my_list:
+  counter += item
+print(counter)
