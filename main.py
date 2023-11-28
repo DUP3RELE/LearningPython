@@ -85,19 +85,10 @@
 #   for x in ['a','b','c','d']:
 #     print(item, x)
 
-picture = [
-  [0,0,0,1,0,0,0],
-  [0,0,1,1,1,0,0],
-  [0,1,1,1,1,1,0],
-  [1,1,1,1,1,1,1],
-  [0,0,0,1,0,0,0],
-  [0,0,0,1,0,0,0],
-]
+some_list = ['a','b','c','b','d','m','n','n']
+duplicates = []
 
-for item in picture:
-  for i in item:
-    if i == 0:
-     print(' ', end='')
-    else:
-      print('*', end='')
-  print()
+for i in some_list:
+  if some_list.count(i) > 1 and i not in duplicates:
+    duplicates.append(i)
+print(duplicates)
