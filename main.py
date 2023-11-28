@@ -85,7 +85,14 @@
 #   for x in ['a','b','c','d']:
 #     print(item, x)
 
-def say_hello():
-  print('Hello')
+# name = 'John'
+# emoji = ':)'
 
+# default, positional and keyword arguments
+def say_hello(name='darth vader', emoji=':<'):
+  print(f'Hello {name} {emoji}')
+
+say_hello('John', ':)')
+say_hello(':)', 'John')
+say_hello(emoji=':)', name='John')
 say_hello()
