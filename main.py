@@ -89,10 +89,16 @@
 # emoji = ':)'
 
 # default, positional and keyword arguments
-def say_hello(name='darth vader', emoji=':<'):
-  print(f'Hello {name} {emoji}')
+# def say_hello(name='darth vader', emoji=':<'):
+#   print(f'Hello {name} {emoji}')
 
-say_hello('John', ':)')
-say_hello(':)', 'John')
-say_hello(emoji=':)', name='John')
-say_hello()
+# say_hello('John', ':)')
+# say_hello(':)', 'John')
+# say_hello(emoji=':)', name='John')
+# say_hello()
+
+def sum(num1, num2):
+  return num1 + num2
+
+total = sum(10,5)
+print(sum(4,total))
