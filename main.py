@@ -97,8 +97,17 @@
 # say_hello(emoji=':)', name='John')
 # say_hello()
 
-def sum(num1, num2):
-  return num1 + num2
+# def sum(num1, num2):
+#   return num1 + num2
 
-total = sum(10,5)
-print(sum(4,total))
+# total = sum(10,5)
+# print(sum(4,total))
+
+def sum(num1, num2):
+  def another_function(num1, num2):
+    return num1 + num2
+  return another_function(num1, num2)
+  print('hellooo!')
+
+total = sum(10,20)
+print(total)
