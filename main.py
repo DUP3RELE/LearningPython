@@ -85,10 +85,7 @@
 #   for x in ['a','b','c','d']:
 #     print(item, x)
 
-some_list = ['a','b','c','b','d','m','n','n']
-duplicates = []
+def say_hello():
+  print('Hello')
 
-for i in some_list:
-  if some_list.count(i) > 1 and i not in duplicates:
-    duplicates.append(i)
-print(duplicates)
+say_hello()
