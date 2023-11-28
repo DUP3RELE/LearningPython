@@ -111,3 +111,13 @@ def sum(num1, num2):
 
 total = sum(10,20)
 print(total)
+
+def printer(a):
+  '''
+  this function prints parameter a
+  '''
+  print(a)
+
+printer('hello!!')
+help(printer)
+print(printer.__doc__)
