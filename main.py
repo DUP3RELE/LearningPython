@@ -103,21 +103,33 @@
 # total = sum(10,5)
 # print(sum(4,total))
 
-def sum(num1, num2):
-  def another_function(num1, num2):
-    return num1 + num2
-  return another_function(num1, num2)
-  print('hellooo!')
+# def sum(num1, num2):
+#   def another_function(num1, num2):
+#     return num1 + num2
+#   return another_function(num1, num2)
+#   print('hellooo!')
 
-total = sum(10,20)
-print(total)
+# total = sum(10,20)
+# print(total)
 
-def printer(a):
-  '''
-  this function prints parameter a
-  '''
-  print(a)
+# def printer(a):
+#   '''
+#   this function prints parameter a
+#   '''
+#   print(a)
 
-printer('hello!!')
-help(printer)
-print(printer.__doc__)
+# printer('hello!!')
+# help(printer)
+# print(printer.__doc__)
+
+# def is_even(num):
+#   return num % 2 == 0
+
+# print(is_even(50))
+
+# args and kwargs
+def super_func(*args, **kwargs):
+  print(kwargs)
+  return sum(args) + sum(kwargs.values())
+
+print(super_func(1,2,3,4,5, num1=5, num2=10))
