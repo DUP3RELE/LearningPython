@@ -128,8 +128,18 @@
 # print(is_even(50))
 
 # args and kwargs
-def super_func(*args, **kwargs):
-  print(kwargs)
-  return sum(args) + sum(kwargs.values())
+# def super_func(*args, **kwargs):
+#   print(kwargs)
+#   return sum(args) + sum(kwargs.values())
 
-print(super_func(1,2,3,4,5, num1=5, num2=10))
+# print(super_func(1,2,3,4,5, num1=5, num2=10))
+
+def highest_even(li):
+  highest = 0
+  for num in li:
+    if num % 2 == 0 and num > highest:
+        highest = num
+  return highest
+
+
+print(highest_even([10,4,5,11,8,3,2]))
