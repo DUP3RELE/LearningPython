@@ -8,7 +8,7 @@
 #   print('you are not old enough to drive!')
 
 # if is_old and is_licenced:
-#   print('You are ready to drive')  
+#   print('You are ready to drive')
 # else:
 #     print('you are not old enough to drive!')
 
@@ -65,15 +65,39 @@
 #   print('done with all the work')
 #   # 1:33
 
-while True:
-  response = input('Hello, say something: ')
-  if(response == 'bye'):
-    break
+# while True:
+#   response = input('Hello, say something: ')
+#   if (response == 'bye'):
+#     break
 
-my_list = [1,2,3]
-i = 0
-while i < len(my_list):
-  i += 1
-  continue
-  # pass
-  print(my_list[i])
+# my_list = [1, 2, 3]
+# for item in my_list:
+#   # thinking about it
+#   pass
+# i = 0
+# while i < len(my_list):
+#   i += 1
+#   continue
+#   print(i)
+#   print(my_list[i])
+
+# for item in (1,2,3,4):
+#   for x in ['a','b','c','d']:
+#     print(item, x)
+
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0],
+]
+
+for item in picture:
+  for i in item:
+    if i == 0:
+     print(' ', end='')
+    else:
+      print('*', end='')
+  print()
