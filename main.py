@@ -47,20 +47,33 @@
 # for key, value in user.items():
 #   print(key, value)
 
-for i,char in enumerate('helloooooo'):
-  print(i,char)
-for item in range(0,10):
-  print(item)
+# for i,char in enumerate('helloooooo'):
+#   print(i,char)
+# for item in range(0,10):
+#   print(item)
 
-for i,char in enumerate(list(range(100))):
-  if char == 50:
-    print(i, char)
+# for i,char in enumerate(list(range(100))):
+#   if char == 50:
+#     print(i, char)
 
+# i = 0
+# while i < 50:
+#   print(i)
+#   # break
+#   i += 1
+# else:
+#   print('done with all the work')
+#   # 1:33
+
+while True:
+  response = input('Hello, say something: ')
+  if(response == 'bye'):
+    break
+
+my_list = [1,2,3]
 i = 0
-while i < 50:
-  print(i)
-  # break
+while i < len(my_list):
   i += 1
-else:
-  print('done with all the work')
-  # 1:33
+  continue
+  # pass
+  print(my_list[i])
