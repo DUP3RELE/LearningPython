@@ -141,3 +141,20 @@ if (len(a)) > 10:
 # walrus operator - assing values to variables as longer sentences
 if ((n := len(a)) > 10):
   print(f'too long {n} letters sentence!')
+
+b = 1
+
+def scope_example():
+  b = 10
+  return b
+
+print(b)
+print(scope_example)
+
+total = 0
+
+def count(total):
+  total += 1
+  return total
+
+print(count(count(count(total))))
