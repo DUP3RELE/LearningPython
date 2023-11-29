@@ -134,12 +134,10 @@
 
 # print(super_func(1,2,3,4,5, num1=5, num2=10))
 
-def highest_even(li):
-  highest = 0
-  for num in li:
-    if num % 2 == 0 and num > highest:
-        highest = num
-  return highest
+a = 'heloooooooooo'
 
-
-print(highest_even([10,4,5,11,8,3,2]))
+if (len(a)) > 10:
+  print(f'too long {len(a)} letters sentence!')
+# walrus operator - assing values to variables as longer sentences
+if ((n := len(a)) > 10):
+  print(f'too long {n} letters sentence!')
