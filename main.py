@@ -134,27 +134,37 @@
 
 # print(super_func(1,2,3,4,5, num1=5, num2=10))
 
-a = 'heloooooooooo'
+# a = 'heloooooooooo'
 
-if (len(a)) > 10:
-  print(f'too long {len(a)} letters sentence!')
-# walrus operator - assing values to variables as longer sentences
-if ((n := len(a)) > 10):
-  print(f'too long {n} letters sentence!')
+# if (len(a)) > 10:
+#   print(f'too long {len(a)} letters sentence!')
+# # walrus operator - assing values to variables as longer sentences
+# if ((n := len(a)) > 10):
+#   print(f'too long {n} letters sentence!')
 
-b = 1
+# b = 1
 
-def scope_example():
-  b = 10
-  return b
+# def scope_example():
+#   b = 10
+#   return b
 
-print(b)
-print(scope_example)
+# print(b)
+# print(scope_example)
 
-total = 0
+# total = 0
 
-def count(total):
-  total += 1
-  return total
+# def count(total):
+#   total += 1
+#   return total
 
-print(count(count(count(total))))
+# print(count(count(count(total))))
+
+def outer():
+  x = 'local'
+  def inner():
+    nonlocal x
+    x = 'nonlocal'
+    print("inner: ", x)
+  inner()
+  print("outer: ", x)
+outer()
