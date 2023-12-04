@@ -159,12 +159,25 @@
 
 # print(count(count(count(total))))
 
-def outer():
-  x = 'local'
-  def inner():
-    nonlocal x
-    x = 'nonlocal'
-    print("inner: ", x)
-  inner()
-  print("outer: ", x)
-outer()
+# def outer():
+#   x = 'local'
+#   def inner():
+#     nonlocal x
+#     x = 'nonlocal'
+#     print("inner: ", x)
+#   inner()
+#   print("outer: ", x)
+# outer()
+
+class PlayerCharacter:
+  def __init__(self, name):
+    self.name = name
+
+  def run(self):
+    print('run')
+
+Player1 = PlayerCharacter('John')
+Player2 = PlayerCharacter('Tom')
+
+print(Player1.name)
+print(Player2.name)
