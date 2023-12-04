@@ -200,4 +200,7 @@ print(Player2.name)
 Player3 = PlayerCharacter.adding_things(21,3)
 print(Player3.age)
 print(Player3.name)
+Player1.name = "hacked!"
+print(Player1.name)
+# convention for making names "private" is to write _ before name. eg = "_name"
 
