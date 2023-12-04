@@ -172,20 +172,32 @@
 class PlayerCharacter:
   # class object atribute
   Membership = True
-  if Membership:
-    def __init__(self, name):
-      self.name = name
   
-    def run(self):
-      print(f'My name is {self.name}')
-      return 'done'
+  def __init__(self, name='anonymous', age=0):
+    if (age >= 18):
+      self.name = name
+      self.age = age
+    else:
+      print('You are too young to play sir!')
 
-Player1 = PlayerCharacter('John')
-Player2 = PlayerCharacter('Tom')
+  def run(self):
+    print(f'My name is {self.name}')
+    return 'done'
+
+  @classmethod
+  def adding_things(cls, num1, num2):
+    return cls('Teddy', num1 + num2)
+
+  @staticmethod
+  def adding_things2(num1, num2):
+    return num1 + num2
+
+Player1 = PlayerCharacter('John', 41)
+Player2 = PlayerCharacter('Tom', 18)
 
 print(Player1.name)
-print(Player1.run())
 print(Player2.name)
+Player3 = PlayerCharacter.adding_things(21,3)
+print(Player3.age)
+print(Player3.name)
 
-if Player1.Membership:
-  print('horray!')
