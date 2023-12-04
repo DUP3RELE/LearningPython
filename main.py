@@ -170,14 +170,22 @@
 # outer()
 
 class PlayerCharacter:
-  def __init__(self, name):
-    self.name = name
-
-  def run(self):
-    print('run')
+  # class object atribute
+  Membership = True
+  if Membership:
+    def __init__(self, name):
+      self.name = name
+  
+    def run(self):
+      print(f'My name is {self.name}')
+      return 'done'
 
 Player1 = PlayerCharacter('John')
 Player2 = PlayerCharacter('Tom')
 
 print(Player1.name)
+print(Player1.run())
 print(Player2.name)
+
+if Player1.Membership:
+  print('horray!')
