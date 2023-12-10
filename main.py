@@ -169,38 +169,52 @@
 #   print("outer: ", x)
 # outer()
 
-class PlayerCharacter:
-  # class object atribute
-  Membership = True
+# class PlayerCharacter:
+#   # class object atribute
+#   Membership = True
   
-  def __init__(self, name='anonymous', age=0):
-    if (age >= 18):
-      self.name = name
-      self.age = age
-    else:
-      print('You are too young to play sir!')
+#   def __init__(self, name='anonymous', age=0):
+#     if (age >= 18):
+#       self.name = name
+#       self.age = age
+#     else:
+#       print('You are too young to play sir!')
 
-  def run(self):
-    print(f'My name is {self.name}')
-    return 'done'
+#   def run(self):
+#     print(f'My name is {self.name}')
+#     return 'done'
 
-  @classmethod
-  def adding_things(cls, num1, num2):
-    return cls('Teddy', num1 + num2)
+#   @classmethod
+#   def adding_things(cls, num1, num2):
+#     return cls('Teddy', num1 + num2)
 
-  @staticmethod
-  def adding_things2(num1, num2):
-    return num1 + num2
+#   @staticmethod
+#   def adding_things2(num1, num2):
+#     return num1 + num2
 
-Player1 = PlayerCharacter('John', 41)
-Player2 = PlayerCharacter('Tom', 18)
+# Player1 = PlayerCharacter('John', 41)
+# Player2 = PlayerCharacter('Tom', 18)
 
-print(Player1.name)
-print(Player2.name)
-Player3 = PlayerCharacter.adding_things(21,3)
-print(Player3.age)
-print(Player3.name)
-Player1.name = "hacked!"
-print(Player1.name)
-# convention for making names "private" is to write _ before name. eg = "_name"
-print('hello!')
+# print(Player1.name)
+# print(Player2.name)
+# Player3 = PlayerCharacter.adding_things(21,3)
+# print(Player3.age)
+# print(Player3.name)
+# Player1.name = "hacked!"
+# print(Player1.name)
+# # convention for making names "private" is to write _ before name. eg = "_name"
+# print('hello!')
+
+class User():
+  def sign_in(self):
+    print('signed in')
+
+class Wizard(User):
+  pass
+
+
+class Archer(User):
+  pass
+
+wizard1 = Wizard()
+print(wizard1.sign_in())
