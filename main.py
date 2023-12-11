@@ -264,12 +264,41 @@
 # print(str(action_figure))
 # print(action_figure['name'])
 
-class SuperList(list):
-  def __len__(self):
-    return 1000
+# class SuperList(list):
+#   def __len__(self):
+#     return 1000
 
-super_list1 = SuperList()
-print(len(super_list1))
-super_list1.append(5)
-print(super_list1[0])
-print(issubclass(SuperList, list))
+# super_list1 = SuperList()
+# print(len(super_list1))
+# super_list1.append(5)
+# print(super_list1[0])
+# print(issubclass(SuperList, list))
+
+class User():
+  def sign_in(self):
+    print('signed in')
+
+class Wizard(User):
+  def __init__(self, name, power):
+    self.name = name
+    self.power = power
+  def attack(self):
+    print(f'{self.name} attacks with {self.power}')
+
+
+class Archer(User):
+  def __init__(self, name, arrows_num):
+    self.name = name
+    self.arrows_num = arrows_num
+  def attack(self):
+    print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
+
+class Hybrid(Wizard, Archer):
+  def __init__(self, name, power, arrow_num):
+    Wizard.__init__(self, name, power)
+    Archer.__init__(self, name, arrow_num)
+
+hybrid1 = Hybrid('Nina', 'fireball', 50)
+
+print(hybrid1.sign_in())
+print(hybrid1.attack())
