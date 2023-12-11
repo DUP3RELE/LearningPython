@@ -229,3 +229,14 @@ wizard1 = Wizard('Gandalf', 'fireball')
 archer1 = Archer('Robin', 500)
 print(wizard1.attack())
 print(archer1.attack())
+print(isinstance(wizard1, Wizard))
+print(isinstance(wizard1, User))
+
+def player_attack(char):
+  char.attack()
+
+player_attack(wizard1)
+player_attack(archer1)
+
+for char in [wizard1, archer1]:
+  char.attack()
