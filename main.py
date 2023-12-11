@@ -240,3 +240,6 @@ player_attack(archer1)
 
 for char in [wizard1, archer1]:
   char.attack()
+
+# introspection
+print(dir(wizard1))
