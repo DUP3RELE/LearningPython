@@ -205,41 +205,61 @@
 # # convention for making names "private" is to write _ before name. eg = "_name"
 # print('hello!')
 
-class User():
-  def sign_in(self):
-    print('signed in')
+# class User():
+#   def sign_in(self):
+#     print('signed in')
 
-class Wizard(User):
-  def __init__(self, name, power):
-    self.name = name
-    self.power = power
-  def attack(self):
-    print(f'{self.name} attacks with {self.power}')
-
-
-class Archer(User):
-  def __init__(self, name, arrows_num):
-    self.name = name
-    self.arrows_num = arrows_num
-  def attack(self):
-    print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
+# class Wizard(User):
+#   def __init__(self, name, power):
+#     self.name = name
+#     self.power = power
+#   def attack(self):
+#     print(f'{self.name} attacks with {self.power}')
 
 
-wizard1 = Wizard('Gandalf', 'fireball')
-archer1 = Archer('Robin', 500)
-print(wizard1.attack())
-print(archer1.attack())
-print(isinstance(wizard1, Wizard))
-print(isinstance(wizard1, User))
+# class Archer(User):
+#   def __init__(self, name, arrows_num):
+#     self.name = name
+#     self.arrows_num = arrows_num
+#   def attack(self):
+#     print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
 
-def player_attack(char):
-  char.attack()
 
-player_attack(wizard1)
-player_attack(archer1)
+# wizard1 = Wizard('Gandalf', 'fireball')
+# archer1 = Archer('Robin', 500)
+# print(wizard1.attack())
+# print(archer1.attack())
+# print(isinstance(wizard1, Wizard))
+# print(isinstance(wizard1, User))
 
-for char in [wizard1, archer1]:
-  char.attack()
+# def player_attack(char):
+#   char.attack()
 
-# introspection
-print(dir(wizard1))
+# player_attack(wizard1)
+# player_attack(archer1)
+
+# for char in [wizard1, archer1]:
+#   char.attack()
+
+# # introspection
+# print(dir(wizard1))
+
+class Toy():
+  def __init__(self, color, age):
+    self.color = color
+    self.age = age
+    self.my_dict = {
+      'name':'Yoyo',
+      'has pets':False
+    }
+
+  def __str__(self):
+    return f'{self.color}'
+
+  def __getitem__(self, i):
+    return self.my_dict[i]
+  
+action_figure = Toy('red', 13)
+print(action_figure.__str__())
+print(str(action_figure))
+print(action_figure['name'])
