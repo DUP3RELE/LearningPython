@@ -274,31 +274,39 @@
 # print(super_list1[0])
 # print(issubclass(SuperList, list))
 
-class User():
-  def sign_in(self):
-    print('signed in')
+# class User():
+#   def sign_in(self):
+#     print('signed in')
 
-class Wizard(User):
-  def __init__(self, name, power):
-    self.name = name
-    self.power = power
-  def attack(self):
-    print(f'{self.name} attacks with {self.power}')
+# class Wizard(User):
+#   def __init__(self, name, power):
+#     self.name = name
+#     self.power = power
+#   def attack(self):
+#     print(f'{self.name} attacks with {self.power}')
 
 
-class Archer(User):
-  def __init__(self, name, arrows_num):
-    self.name = name
-    self.arrows_num = arrows_num
-  def attack(self):
-    print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
+# class Archer(User):
+#   def __init__(self, name, arrows_num):
+#     self.name = name
+#     self.arrows_num = arrows_num
+#   def attack(self):
+#     print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
 
-class Hybrid(Wizard, Archer):
-  def __init__(self, name, power, arrow_num):
-    Wizard.__init__(self, name, power)
-    Archer.__init__(self, name, arrow_num)
+# class Hybrid(Wizard, Archer):
+#   def __init__(self, name, power, arrow_num):
+#     Wizard.__init__(self, name, power)
+#     Archer.__init__(self, name, arrow_num)
 
-hybrid1 = Hybrid('Nina', 'fireball', 50)
+# hybrid1 = Hybrid('Nina', 'fireball', 50)
 
-print(hybrid1.sign_in())
-print(hybrid1.attack())
+# print(hybrid1.sign_in())
+# print(hybrid1.attack())
+
+def multiply_by2(li):
+  new_list = []
+  for item in li:
+    new_list.append(item * 2)
+  return new_list
+
+print(multiply_by2([1, 2, 3]))
