@@ -321,3 +321,5 @@ print(list(filter(check_odd, new_list)))
 print(new_list)
 print(list(zip(new_list, your_list, their_list)))
 print(reduce(accumulator, new_list, 0))
+# lambda - one time anonymous function
+print(list(map(lambda item: item*2, new_list)))
