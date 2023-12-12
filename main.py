@@ -345,13 +345,19 @@
 
 # print(my_list4)
 
-simple_dict = {
-  'a':1,
-  'b':2,
-  'c':3,
-  'd':4
-}
-my_dict = {key:value**2 for key,value in simple_dict.items() if value % 2 == 0}
-your_dict = {num:num*2 for num in [1,2,3]}
-print(my_dict)
-print(your_dict)
+# simple_dict = {
+#   'a':1,
+#   'b':2,
+#   'c':3,
+#   'd':4
+# }
+# my_dict = {key:value**2 for key,value in simple_dict.items() if value % 2 == 0}
+# your_dict = {num:num*2 for num in [1,2,3]}
+# print(my_dict)
+# print(your_dict)
+
+some_list = ['a','b','c','d','b','m','n','n']
+
+duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
+
+print(duplicates)
