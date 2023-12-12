@@ -302,7 +302,7 @@
 
 # print(hybrid1.sign_in())
 # print(hybrid1.attack())
-
+from functools import reduce
 new_list = [1,2,3]
 your_list = [10,20,30]
 their_list = [5,4,3]
@@ -313,8 +313,11 @@ def multiply_by2(item):
 def check_odd(item):
   return item % 2 != 0
 
+def accumulator(acc, item):
+  return acc + item
 
 print(list(map(multiply_by2, new_list)))
 print(list(filter(check_odd, new_list)))
 print(new_list)
 print(list(zip(new_list, your_list, their_list)))
+print(reduce(accumulator, new_list, 0))
