@@ -326,13 +326,21 @@
 
 # square
 
-my_list = [5,4,3]
+my_list = [char for char in 'hello']
 
-print(list(map(lambda item: item**2, my_list)))
+# for char in 'hello':
+#   my_list.append(char)
 
-# list sorting
+print(my_list)
 
-a = [(0,2), (4,3), (9,9), (10,-1)]
+my_list2 = [num for num in range(0,100)]
 
-a.sort(key= lambda x: x[1])
-print(a)
+print(my_list2)
+
+my_list3= [num*2 for num in range(0,100)]
+
+print(my_list3)
+
+my_list4= [num**2 for num in range(0,100) if num % 2 == 0]
+
+print(my_list4)
