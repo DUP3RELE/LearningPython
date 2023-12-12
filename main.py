@@ -304,6 +304,8 @@
 # print(hybrid1.attack())
 
 new_list = [1,2,3]
+your_list = [10,20,30]
+
 def multiply_by2(item):
   return item*2
 
@@ -314,3 +316,4 @@ def check_odd(item):
 print(list(map(multiply_by2, new_list)))
 print(list(filter(check_odd, new_list)))
 print(new_list)
+print(list(zip(new_list, your_list)))
