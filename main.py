@@ -358,10 +358,25 @@
 
 # higher order function
 
-def greet(func):
-  func()
+# def greet(func):
+#   func()
 
-def greet2(func):
-  def func():
-    return 5
-  return func
+# def greet2(func):
+#   def func():
+#     return 5
+#   return func
+
+
+
+def my_decorator(func):
+  def wrap_func():
+    print('****')
+    func()
+    print('****')
+  return wrap_func
+
+@my_decorator
+def hello():
+  print('helooo')
+
+hello()
