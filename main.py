@@ -356,8 +356,12 @@
 # print(my_dict)
 # print(your_dict)
 
-some_list = ['a','b','c','d','b','m','n','n']
+# higher order function
 
-duplicates = list(set([x for x in some_list if some_list.count(x) > 1]))
+def greet(func):
+  func()
 
-print(duplicates)
+def greet2(func):
+  def func():
+    return 5
+  return func
