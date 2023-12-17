@@ -368,15 +368,29 @@
 
 
 
+# def my_decorator(func):
+#   def wrap_func():
+#     print('****')
+#     func()
+#     print('****')
+#   return wrap_func
+
+# @my_decorator
+# def hello():
+#   print('helooo')
+
+# hello
+
+
 def my_decorator(func):
-  def wrap_func():
+  def wrap_func(*args, **kwargs):
     print('****')
-    func()
+    func(*args, **kwargs)
     print('****')
   return wrap_func
 
 @my_decorator
-def hello():
-  print('helooo')
+def hello(greeting, emoji):
+  print(greeting, emoji)
 
-hello()
+hello('hi', ':P')
