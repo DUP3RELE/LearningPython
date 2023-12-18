@@ -411,19 +411,23 @@
 #     i*5
 
 # long_time()
-# while True:
-#   try:
-#     age = int(input('what is Your age?: '))
-#     10/age
-#     print(age)
-#   except ValueError:
-#     print('Please enter a number')
-#   except ZeroDivisionError:
-#     print('Please enter a number higher than 0')
+while True:
+  try:
+    age = int(input('what is Your age?: '))
+    10/age
+    print(age)
+  except ValueError:
+    print('Please enter a number')
+    continue
+  except ZeroDivisionError:
+    print('Please enter a number higher than 0')
 
-#   else:
-#     print('Thank You!')
-#     break
+  else:
+    print('Thank You!')
+    break
+  finally:
+    print('Ok, im finally done')
+  print('Can you hear me?')
 
 def sum(num1, num2):
   try:
