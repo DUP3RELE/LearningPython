@@ -411,9 +411,16 @@
 #     i*5
 
 # long_time()
+while True:
+  try:
+    age = int(input('what is Your age?: '))
+    10/age
+    print(age)
+  except ValueError:
+    print('Please enter a number')
+  except ZeroDivisionError:
+    print('Please enter a number higher than 0')
 
-try:
-  age = int(input('what is Your age?: '))
-  print(age)
-except:
-  print('Please enter a number')
+  else:
+    print('Thank You!')
+    break
