@@ -481,3 +481,5 @@ class MyGen():
 gen = MyGen(0,100)
 for i in gen:
   print(i)
+
+print('heh')
