@@ -172,7 +172,7 @@
 # class PlayerCharacter:
 #   # class object atribute
 #   Membership = True
-  
+
 #   def __init__(self, name='anonymous', age=0):
 #     if (age >= 18):
 #       self.name = name
@@ -216,14 +216,12 @@
 #   def attack(self):
 #     print(f'{self.name} attacks with {self.power}')
 
-
 # class Archer(User):
 #   def __init__(self, name, arrows_num):
 #     self.name = name
 #     self.arrows_num = arrows_num
 #   def attack(self):
 #     print(f'{self.name} attacks with arrows, and have {self.arrows_num} arrows left')
-
 
 # wizard1 = Wizard('Gandalf', 'fireball')
 # archer1 = Archer('Robin', 500)
@@ -258,7 +256,7 @@
 
 #   def __getitem__(self, i):
 #     return self.my_dict[i]
-  
+
 # action_figure = Toy('red', 13)
 # print(action_figure.__str__())
 # print(str(action_figure))
@@ -284,7 +282,6 @@
 #     self.power = power
 #   def attack(self):
 #     print(f'{self.name} attacks with {self.power}')
-
 
 # class Archer(User):
 #   def __init__(self, name, arrows_num):
@@ -366,8 +363,6 @@
 #     return 5
 #   return func
 
-
-
 # def my_decorator(func):
 #   def wrap_func():
 #     print('****')
@@ -380,7 +375,6 @@
 #   print('helooo')
 
 # hello
-
 
 # def my_decorator(func):
 #   def wrap_func(*args, **kwargs):
@@ -435,7 +429,6 @@
 #   except TypeError as err:
 #     print(f'please enter a numbers {err}')
 
-
 # def sum(num1, num2):
 #   try:
 #     return num1/num2
@@ -453,33 +446,57 @@
 # next(g)
 # print(next(g))
 
-def special_for(iterable):
-  iterator = iter(iterable)
-  while True:
-    try:
-      print(iterator)
-      next(iterator)
-    except StopIteration:
-      break
+# def special_for(iterable):
+#   iterator = iter(iterable)
+#   while True:
+#     try:
+#       print(iterator)
+#       next(iterator)
+#     except StopIteration:
+#       break
 
-special_for([1,2,3])
+# special_for([1,2,3])
 
-class MyGen():
-  current = 0
-  def __init__(self, first, last):
-    self.first = first
-    self.last = last
-  def __iter__(self):
-    return self
-  def __next__(self):
-    if MyGen.current < self.last:
-      num = MyGen.current
-      MyGen.current += 1
-      return num
-    raise StopIteration
+# class MyGen():
+#   current = 0
+#   def __init__(self, first, last):
+#     self.first = first
+#     self.last = last
+#   def __iter__(self):
+#     return self
+#   def __next__(self):
+#     if MyGen.current < self.last:
+#       num = MyGen.current
+#       MyGen.current += 1
+#       return num
+#     raise StopIteration
 
-gen = MyGen(0,100)
-for i in gen:
-  print(i)
+# gen = MyGen(0,100)
+# for i in gen:
+#   print(i)
 
-print('heh')
+
+def fib(number):
+  a = 0
+  b = 1
+  for i in range(number):
+    yield a
+    temp = a
+    a = b
+    b = temp + b
+
+def fib2(number):
+  a = 0
+  b = 1
+  result = []
+  for i in range(number):
+    result.append(a)
+    temp = a
+    a = b
+    b = temp + b
+  return result
+
+for x in fib(20):
+  print(x)
+
+print(fib2(20))
