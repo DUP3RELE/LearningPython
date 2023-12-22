@@ -502,6 +502,8 @@
 # print(fib2(20))
 
 import utility
+import shopping.shopping_cart
 
 print(utility.multiply(2,3))
 print(utility.divide(6,2))
+print(shopping.shopping_cart.buy('apple'))
