@@ -507,3 +507,5 @@ import shopping.shopping_cart
 print(utility.multiply(2,3))
 print(utility.divide(6,2))
 print(shopping.shopping_cart.buy('apple'))
+print(shopping.shopping_cart.buy('apple'))
+print(shopping.shopping_cart.buy('apple'))
