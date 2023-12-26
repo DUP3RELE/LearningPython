@@ -507,3 +507,7 @@ import shopping.shopping_cart
 print(utility.multiply(2,3))
 print(utility.divide(6,2))
 print(shopping.shopping_cart.buy('apple'))
+
+import random
+print(random.choice([1,2,3,4,5,6]))
+print(random.randint(1,10))
