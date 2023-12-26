@@ -509,5 +509,10 @@ print(utility.divide(6,2))
 print(shopping.shopping_cart.buy('apple'))
 
 import random
+
+my_list = [1,2,3,4,5,6]
+
 print(random.choice([1,2,3,4,5,6]))
+random.shuffle(my_list)
 print(random.randint(1,10))
+print(my_list)
