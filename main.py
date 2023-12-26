@@ -501,18 +501,21 @@
 
 # print(fib2(20))
 
-import utility
-import shopping.shopping_cart
+# import utility
+# import shopping.shopping_cart
 
-print(utility.multiply(2,3))
-print(utility.divide(6,2))
-print(shopping.shopping_cart.buy('apple'))
+# print(utility.multiply(2,3))
+# print(utility.divide(6,2))
+# print(shopping.shopping_cart.buy('apple'))
 
-import random
+# import random
 
-my_list = [1,2,3,4,5,6]
+# my_list = [1,2,3,4,5,6]
 
-print(random.choice([1,2,3,4,5,6]))
-random.shuffle(my_list)
-print(random.randint(1,10))
-print(my_list)
+# print(random.choice([1,2,3,4,5,6]))
+# random.shuffle(my_list)
+# print(random.randint(1,10))
+# print(my_list)
+
+import sys
+sys.argv
