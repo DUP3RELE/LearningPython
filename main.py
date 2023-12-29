@@ -565,3 +565,9 @@ print(datetime.time(5,24,2))
 
 # checks date
 print(datetime.date.today())
+
+from array import array
+# optimalisation
+arr = array('i', [1,2,3,4])
+
+print(arr[0])
