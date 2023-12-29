@@ -530,3 +530,30 @@ import pyjokes
 joke = pyjokes.get_joke('en', 'neutral')
 
 print(joke)
+
+# Usefull modules
+
+from collections import Counter, defaultdict, OrderedDict
+
+# counting items
+li = [1,2,3,4,5,6,7,7]
+sentence = 'this is a sentence'
+
+print(Counter(li))
+print(Counter(sentence))
+
+# adds values to dict
+dictionary = defaultdict(lambda: 5,{'a': 1, 'b': 2})
+print(dictionary['c'])
+print(dictionary['a'])
+
+# checks order - normal dicts has no sence of order
+d = OrderedDict()
+d['a'] = 1
+d['b'] = 2
+
+d2 = OrderedDict()
+d2['b'] = 2
+d2['a'] = 1
+
+print(d2 == d)
