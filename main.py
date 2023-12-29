@@ -557,3 +557,11 @@ d2['b'] = 2
 d2['a'] = 1
 
 print(d2 == d)
+
+import datetime
+
+# creates time objects
+print(datetime.time(5,24,2))
+
+# checks date
+print(datetime.date.today())
