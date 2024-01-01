@@ -525,51 +525,60 @@
 # else:
 #   print(f'you missed! The number was {random_num}')
 
-import pyjokes
+# import pyjokes
 
-joke = pyjokes.get_joke('en', 'neutral')
+# joke = pyjokes.get_joke('en', 'neutral')
 
-print(joke)
+# print(joke)
 
-# Usefull modules
+# # Usefull modules
 
-from collections import Counter, defaultdict, OrderedDict
+# from collections import Counter, defaultdict, OrderedDict
 
-# counting items
-li = [1,2,3,4,5,6,7,7]
-sentence = 'this is a sentence'
+# # counting items
+# li = [1,2,3,4,5,6,7,7]
+# sentence = 'this is a sentence'
 
-print(Counter(li))
-print(Counter(sentence))
+# print(Counter(li))
+# print(Counter(sentence))
 
-# adds values to dict
-dictionary = defaultdict(lambda: 5,{'a': 1, 'b': 2})
-print(dictionary['c'])
-print(dictionary['a'])
+# # adds values to dict
+# dictionary = defaultdict(lambda: 5,{'a': 1, 'b': 2})
+# print(dictionary['c'])
+# print(dictionary['a'])
 
-# checks order - normal dicts has no sence of order
-d = OrderedDict()
-d['a'] = 1
-d['b'] = 2
+# # checks order - normal dicts has no sence of order
+# d = OrderedDict()
+# d['a'] = 1
+# d['b'] = 2
 
-d2 = OrderedDict()
-d2['b'] = 2
-d2['a'] = 1
+# d2 = OrderedDict()
+# d2['b'] = 2
+# d2['a'] = 1
 
-print(d2 == d)
+# print(d2 == d)
 
-import datetime
+# import datetime
 
-# creates time objects
-print(datetime.time(5,24,2))
+# # creates time objects
+# print(datetime.time(5,24,2))
 
-# checks date
-print(datetime.date.today())
+# # checks date
+# print(datetime.date.today())
 
-from array import array
-# optimalisation
-arr = array('i', [1,2,3,4])
+# from array import array
+# # optimalisation
+# arr = array('i', [1,2,3,4])
 
-print(arr[0])
-print(arr[-1])
-print(arr[3])
+# print(arr[0])
+# print(arr[-1])
+# print(arr[3])
+
+import pdb
+# pdb help, variable names etc
+
+def add(num1, num2):
+  pdb.set_trace()
+  return num1 + num2
+
+add(4, '1')
