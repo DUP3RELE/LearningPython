@@ -604,7 +604,7 @@
 # with open('shopping/shopping_cart.py') as my3_file:
 #   print(my3_file.read())
 
-import re
+# import re
 
 # pattern = re.compile('this')
 # string = 'search inside this string please!'
@@ -618,7 +618,19 @@ import re
 # b = pattern.search(string)
 # print(b)
 
-pattern = re.compile(r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" )
-string = 'tzirw@example.com'
-a = pattern.search(string)
-print(a)
+# pattern = re.compile(r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" )
+# string = 'tzirw@example.com'
+# a = pattern.search(string)
+# print(a)
+
+import re
+
+password_pattern = r"^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,}$"
+
+def validate_password(password):
+    if re.match(password_pattern, password):
+        print("Valid password")
+    else:
+        print("Invalid password")
+
+validate_password("Abc123!@#")
