@@ -586,15 +586,20 @@
 # add(1, 'asdf')
 # add(4, '5')
 
-my_file = open('fibonacci.py')
-print(my_file.readlines())
-my_file.close()
+# my_file = open('fibonacci.py')
+# print(my_file.readlines())
+# my_file.close()
 
-with open('file.txt', mode='a') as my2_file:
-  text = my2_file.write('ending setence')
-  print(text)
+# with open('file.txt', mode='a') as my2_file:
+#   text = my2_file.write('ending setence')
+#   print(text)
   
-with open('file.txt', mode='r+') as my2_file:
-  text = my2_file.write('hello, its boba!')
-  print(text)
-  print(my2_file.readlines())
+# with open('file.txt', mode='r+') as my2_file:
+#   text = my2_file.write('hello, its boba!')
+#   print(text)
+#   print(my2_file.readlines())
+
+# # mode - write-w read-r append-a, read-write-r+ write-append-w+
+
+with open('shopping/shopping_cart.py') as my3_file:
+  print(my3_file.read())
