@@ -601,5 +601,19 @@
 
 # # mode - write-w read-r append-a, read-write-r+ write-append-w+
 
-with open('shopping/shopping_cart.py') as my3_file:
-  print(my3_file.read())
+# with open('shopping/shopping_cart.py') as my3_file:
+#   print(my3_file.read())
+
+import re
+
+pattern = re.compile('this')
+string = 'search inside this string please!'
+
+print('this' in string)
+
+a = re.search('this', string)
+print(a.start())
+print(a.end())
+print(a.group())
+b = pattern.search(string)
+print(b)
