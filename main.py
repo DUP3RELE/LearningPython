@@ -627,6 +627,8 @@ import re
 
 password_pattern = r"^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,}$"
 
+password_pattern2 = re.compile(r"^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$])[A-Za-z\d!@#$]{8,}$")
+
 def validate_password(password):
     if re.match(password_pattern, password):
         print("Valid password")
@@ -634,3 +636,7 @@ def validate_password(password):
         print("Invalid password")
 
 validate_password("Abc123!@#")
+password = "Abc123!@#"
+
+a = password_pattern2.fullmatch(password)
+print(a)
