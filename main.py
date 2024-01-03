@@ -606,14 +606,19 @@
 
 import re
 
-pattern = re.compile('this')
-string = 'search inside this string please!'
+# pattern = re.compile('this')
+# string = 'search inside this string please!'
 
-print('this' in string)
+# print('this' in string)
 
-a = re.search('this', string)
-print(a.start())
-print(a.end())
-print(a.group())
-b = pattern.search(string)
-print(b)
+# a = re.search('this', string)
+# print(a.start())
+# print(a.end())
+# print(a.group())
+# b = pattern.search(string)
+# print(b)
+
+pattern = re.compile(r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" )
+string = 'tzirw@example.com'
+a = pattern.search(string)
+print(a)
