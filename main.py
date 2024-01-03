@@ -574,14 +574,18 @@
 # print(arr[-1])
 # print(arr[3])
 
-import pdb
+# import pdb
 # pdb help, variable names etc
 # step, continue
 
 
-def add(num1, num2):
-  pdb.set_trace()
-  return num1 + num2
+# def add(num1, num2):
+#   pdb.set_trace()
+#   return num1 + num2
 
-add(1, 'asdf')
-add(4, '5')
+# add(1, 'asdf')
+# add(4, '5')
+
+my_file = open('fibonacci.py')
+print(my_file.readlines())
+my_file.close
