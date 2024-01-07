@@ -12,4 +12,5 @@ class TestMain(unittest.TestCase):
     result = main.do_stuff(test_param)
     self.assertEqual(result, ValueError)
 
-unittest.main()
+if __name__ == '__main__':
+  unittest.main()
