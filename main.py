@@ -641,8 +641,25 @@
 # a = password_pattern2.fullmatch(password)
 # print(a)
 
-def do_stuff(num):
+# def do_stuff(num):
+#   try:
+#     return num + 5
+#   except ValueError as err:
+#     return err
+
+def run_guess(guess, answer):
+  if 0 < guess < 11:
+   if guess == answer:
+    print('you are a genius!')
+    break
+  else:
+    print('hey bozo, I said 1~100')
+
+answer = random.randint(1,10)
+while True:
   try:
-    return num + 5
-  except ValueError as err:
-    return err
+    guess = int(input('Guess a number 1~10: '))
+    run_guess(guess, answer)
+  except ValueError:
+    print('please enter a number')
+    continue
