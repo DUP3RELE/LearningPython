@@ -642,4 +642,7 @@
 # print(a)
 
 def do_stuff(num):
-  return num + 5
+  try:
+    return num + 5
+  except ValueError as err:
+    return err
