@@ -647,11 +647,13 @@
 #   except ValueError as err:
 #     return err
 
+import random
+
 def run_guess(guess, answer):
   if 0 < guess < 11:
    if guess == answer:
     print('you are a genius!')
-    break
+    return True
   else:
     print('hey bozo, I said 1~100')
 
