@@ -21,14 +21,14 @@ def pdf_combiner(pdf_list):
 
 pdf_combiner(imputs)
 
-template = PyPDF2.PdfReader(open('pdf/super.pdf', 'rb'))
-watermark = PyPDF2.PdfReader(open('pdf/dummy.pdf', 'rb'))
-output = PyPDF2.PdfWriter()
+# template = PyPDF2.PdfReader(open('pdf/super.pdf', 'rb'))
+# watermark = PyPDF2.PdfReader(open('pdf/dummy.pdf', 'rb'))
+# output = PyPDF2.PdfWriter()
 
-for i in range(template.getNumPages()):
-  page = template.getPage(i)
-  page.mergePage(watermark.getPage(0))
-  output.addPage(page)
+# for i in range(template.getNumPages()):
+#   page = template.getPage(i)
+#   page.mergePage(watermark.getPage(0))
+#   output.addPage(page)
 
-with open('pdf/watermarked.pdf', 'wb') as file:
-  output.write(file)
+# with open('pdf/watermarked.pdf', 'wb') as file:
+#   output.write(file)
