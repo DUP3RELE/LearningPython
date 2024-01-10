@@ -666,7 +666,3 @@
 #     except ValueError:
 #       print('please enter a number')
 #       continue
-
-from PIL import Image
-
-img = Image.open(images.jpg)
