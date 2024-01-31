@@ -20,9 +20,3 @@ df1['Wage'] = wage
 df1['Value'] = value
 df1['Difference'] = df1['Value'] - df1['Wage']
 df1.sort_values('Difference', ascending=False)
-wage = df1['Wage'].replace('[\€,]', '', regex=True).apply(value_to_float)
-value = df1['Value'].replace('[\€,]', '', regex=True).apply(value_to_float)
-df1['Wage'] = wage
-df1['Value'] = value
-df1['Difference'] = df1['Value'] - df1['Wage']
-df1.sort_values('Difference', ascending=False)
